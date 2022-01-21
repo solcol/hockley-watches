@@ -1,0 +1,15 @@
+title: Hockley Watch Emporium
+locale: en_GB
+
+collections:
+  products:
+    layout: default
+    output: true
+
+sass:
+  sass_dir: assets/style
+  # style: compressed
+
+exclude:
+  - vercel.json
+  
