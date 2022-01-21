@@ -1,0 +1,63 @@
+body#home {
+
+    header {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        border-top: 4px solid $fg;
+        border-bottom: 4px solid $fg;
+
+
+        div.header-content {
+            position: relative;
+            padding: 0 5vw;
+            height: 40vh;
+            width: 90vw;
+
+            // vertically align content in each side
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            background-color: #{$bg-2}aa;
+        
+            &:not(.cover-bg) {
+                background: linear-gradient(135deg, #{$bg-2}99 0%, #{$bg-3}99 100%);
+            }            
+            
+            transition: opacity 0.5s;
+
+            // content div
+            div {
+                transition: transform 0.5s;
+            
+                h1 {
+                    font-size: 5em;
+                    text-transform: capitalize;
+                    margin: 0;
+                }
+    
+                h2 {
+                    text-transform: capitalize;
+                    font-style: italic;
+                }
+            }
+            
+            // bring watch image up behind hero
+            &:nth-of-type(2) {
+                margin-top: -40vh;
+                z-index: -1;
+            }
+        }
+
+        a:hover > div.header-content:first-of-type {
+            opacity: 0.8;
+            
+            div {
+                transform: scale(0.9);
+            }
+        }
+    }
+
+}

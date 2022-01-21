@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: $bg;
+    color: $fg;
+
+    font-family: $fn-copy;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $fn-heading;
+}
