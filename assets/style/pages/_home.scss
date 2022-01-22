@@ -3,17 +3,22 @@ body#home {
     header {
         margin: 0;
         padding: 0;
-        min-height: 40vh;        
+        height: 40vh;        
 
         text-align: center;
         border-top: 4px solid $fg;
         border-bottom: 4px solid $fg;
 
+        a {
+            display: block;
+            height: 40vh;
+        }
+
 
         div.header-content {
             position: relative;
             padding: 0 5vw;
-            min-height: 40vh;
+            height: 40vh;
             width: 90vw;
 
             // vertically align content in each side

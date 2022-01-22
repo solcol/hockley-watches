@@ -15,3 +15,71 @@ a.no-style {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+//
+//// Product Columns
+//
+
+section {
+    background-color: $bg-1;
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 4px;
+
+    h1 {
+        margin: 0;
+        margin-bottom: 1em;
+        width: 100%;
+        border-bottom: 2px solid #{$fg}55;
+    }
+}
+
+div.product-columns {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+
+
+    a.product {
+        display: block;
+        background-color: $bg-2;
+        padding: 32px;
+        border-radius: 2px;
+
+        figure.product-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            margin: 0;
+            margin-bottom: 1em;
+            height: 128px;
+
+
+            background-color: #fff;
+
+            img {
+                height: 100%;
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+
+        h2,
+        h3 {
+            margin: 0;
+        }
+
+        h3 {
+            text-align: right;
+        }
+
+        &:hover {
+            h2 {
+                text-decoration: underline;
+            }
+        }
+    }
+}
